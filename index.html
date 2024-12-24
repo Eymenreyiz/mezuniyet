@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyun Merkezi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oyun Merkezi</h1>
+        
+        
+        <div id="tictactoe-container">
+            <h2>XOX Oyunu</h2>
+            <div id="game-mode">
+                <button onclick="selectMode('bot')">Bota Karşı Oyna</button>
+                <button onclick="selectMode('2player')">2 Kişilik Oyna</button>
+            </div>
+            <div id="board" class="hidden">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <div id="status"></div>
+            <button id="restart" class="hidden">Yeniden Başlat</button>
+        </div>
+
+        
+        <div id="snake-container">
+            <h2>Yılan Oyunu</h2>
+            <canvas id="snakeCanvas"></canvas>
+            <div id="snake-controls">
+                <button id="startSnake">Başlat</button>
+                <div id="score">Skor: 0</div>
+            </div>
+        </div>
+    </div>
+    <script src="tictactoe.js"></script>
+    <script src="snake.js"></script>
+</body>
+</html>
